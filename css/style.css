@@ -1,0 +1,28 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Hiragino Kaku Gothic Pro', 'Noto Sans JP', sans-serif;
+}
+
+:root {
+    --white: #FFFFFF;
+    --black: #333333;
+}
+
+/* ---------------------------メインビジュアル */
+.header-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.back-img {
+    display: flex;
+
+    img {
+        height: 625px;
+        
+    }
+}
