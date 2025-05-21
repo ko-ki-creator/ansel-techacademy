@@ -11,16 +11,396 @@
     <header>
         <div class="header-wrapper">
             <div class="header-inner">
-                <div class="back-img">
-                    <img src="images/mv1.jpg" alt="">
-                    <img src="images/mv2.jpg" alt="">
-                    <img src="images/mv3.jpg" alt="">
-                    <img src="images/mv4.jpg" alt="">
+                <div class="back-img"> <!--背景画像-->
+                    <div class="above-img">
+                        <img src="images/mv1.jpg" alt="">
+                        <img src="images/mv2.jpg" alt="">
+                    </div>
+                    <div class="under-img">
+                        <img src="images/mv3.jpg" alt="">
+                        <img src="images/mv4.jpg" alt="">
+                    </div>
+                </div>
+                <button class="hamburger"> <!--ハンバーガーメニュー-->
+                    <span></span>
+                    <span></span>
+                    <p>menu</p>
+                </button>
+
+                <div class="header-content">
+                    <div class="header-flex">
+                        <div class="copy-cta">
+                            <div class="catch-copy"> <!--キャッチコピー-->
+                                <p class="copy-top">現役エンジニア<span>に学ぶ</span></p>
+                                <p class="copy-bottom">ハイレベルプログラミングスクール</p>
+                            </div>
+                            <div class="cta-btn-pc"> <!--CTA-->
+                                <p>面談申込で10万円OFF！</p>
+                                <a href="#">無料面談に申し込む</a>
+                            </div>
+                        </div>
+                        <div class="achievements"> <!--実績-->
+                            <div class="job-change">
+                                <img src="images/mv-tree.png" alt="">
+                                <div class="job-change-item">
+                                    <p class="success-rate">転職<br class="pc">成功率</p>
+                                    <p class="percent">99<span>%</span></p>
+                                </div>
+                            </div>
+                            <div class="guidance">
+                                <img src="images/mv-tree.png" alt="">
+                                <div class="guidance-item">
+                                    <p class="teaching-results">累計<br class="pc">指導実績</p>
+                                    <p class="people">45,000<span>名以上</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-reverse">
+                    <img src="images/top-arrow.png" alt="">
+                </div>
+                <div class="cta-btn-sp"> <!--CTA-->
+                    <p>面談申込で10万円OFF！</p>
+                    <a href="#">無料面談に申し込む</a>
                 </div>
             </div>
         </div>
     </header>
+
     <main>
+        <!-- Ansel Tech Academyとは -->
+        <section class="about" id="about">
+            <div class="wrapper">
+                <div class="about-inner">
+                    <div class="flex-sp">
+                        <div class="about-content">
+                            <div class="about-icon"><img src="images/about-icon.png" alt=""></div>
+                            <div class="about-heading">
+                                <h2>Ansel Tech Academyとは</h2>
+                                <p>
+                                    厳選された現役エンジニアが講師を担当する、<br>
+                                    ハイレベルなプログラミングスクールを提供しています。<br>
+                                    スクール受講中は、IT系資格取得代を全般補助！
+                                </p>
+                            </div>
+                        </div>
+                        <img class="large-img" src="images/about1.jpg" alt="">
+                    </div>
+                    <img class="small-img" src="images/about2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- 受講することでこんな未来を手に入れられる -->
+        <section class="future" id="future">
+            <div class="wrapper">
+                <div class="future-inner">
+                    <div class="heading">
+                        <h2>FUTURE</h2>
+                        <p>受講することでこんな未来を手に入れられる</p>
+                    </div>
+                    <div class="future-container">
+                        <div class="future-article">
+                            <img src="images/future1.jpg" alt="">
+                            <div class="future-content">
+                                <h3>公務員から<br class="sp">フロントエンジニアとして活躍</h3>
+                                <div class="student">
+                                    <p class="item">受講生</p>
+                                    <p class="name">市川 美月  様</p>
+                                </div>
+                                <div class="course">
+                                    <p class="item">講座内容</p>
+                                    <p class="name">HTML/CSS/JavaScript/<br class="sp">Figma/Photoshop</p>
+                                </div>
+                                <p>以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。</p>
+                            </div>
+                        </div>
+                        <div class="future-article">
+                            <img src="images/future2.jpg" alt="">
+                            <div class="future-content">
+                                <h3>パチンコ店員から<br class="sp">バックエンドエンジニアとして活躍</h3>
+                                <div class="student">
+                                    <p class="item">受講生</p>
+                                    <p class="name">樋口 大輔  様</p>
+                                </div>
+                                <div class="course">
+                                    <p class="item">講座内容</p>
+                                    <p class="name">PHP/Python/Java</p>
+                                </div>
+                                <p>半年間で3つの資格を取得し、37歳未経験からエンジニア転職することができました。</p>
+                            </div>
+                        </div>
+                        <div class="future-article">
+                            <img src="images/future3.jpg" alt="">
+                            <div class="future-content">
+                                <h3>主婦から<br class="sp">フリーランスエンジニアとして活躍</h3>
+                                <div class="student">
+                                    <p class="item">受講生</p>
+                                    <p class="name">松下 ひろこ  様</p>
+                                </div>
+                                <div class="course">
+                                    <p class="item">講座内容</p>
+                                    <p class="name">HTML/CSS/JavaScript/PHP</p>
+                                </div>
+                                <p>子育てと学習を両立させ、現在は月収50万円ほど稼げるようになりました。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENTRY -->
+        <section class="entry">
+            <div class="wrapper">
+                <div class="entry-wrapper">
+                    <div class="entry-inner">
+                        <div class="entry-heading">
+                            <img src="images/entry-icon.png" alt="">
+                            <div class="heading">
+                                <h2>ENTRY</h2>
+                                <p>無料面談申し込み</p>
+                            </div>
+                        </div>
+                        <p class="entry-text">
+                            キャリアに関する疑問や不安を相談したり、習得できるスキルやサポートについて説明を受けられる無料面談を実施しています。あなたの思いや夢を聞かせてください。
+                        </p>
+                        <div class="career">
+                            <p>キャリア相談からカリキュラム説明まで</p>
+                            <img src="images/entry-yellow-line.png" alt="">
+                        </div>
+                        <div class="free">
+                            <span>完</span>
+                            <span>全</span>
+                            <span>無</span>
+                            <span>料</span>
+                        </div>
+                        <div class="entry-btn"> <!--CTA-->
+                            <p>面談申込で10万円OFF！</p>
+                            <a href="#">無料面談に申し込む</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 挫折 -->
+        <section class="problem" id="problem">
+            <div class="wrapper">
+                <div class="problem-inner">
+                    <h2>
+                        プログラミングを<br class="sp">独学しようとしても<br>
+                        <span>約</span>90<span>%</span>は挫折します
+                    </h2>
+                    <div class="problem-list">
+                        <ul>
+                            <li>
+                                <img src="images/problem-check-icon.png" alt="">
+                                <p>独学で学んでいた</p>
+                            </li>
+                            <li>
+                                <img src="images/problem-check-icon.png" alt="">
+                                <p>教材が合わない</p>
+                            </li>
+                            <li>
+                                <img src="images/problem-check-icon.png" alt="">
+                                <p>質問できる人がいない</p>
+                            </li>
+                            <li>
+                                <img src="images/problem-check-icon.png" alt="">
+                                <p>モチベーション維持が難しい</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="problem-human" src="images/problem-human.png" alt="">
+                    <p>などの理由があります</p>
+                    <img class="problem-arrow" src="images/problem-arrow.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- 解決 -->
+        <section class="solution" id="solution">
+            <div class="wrapper">
+                <div class="solution-inner">
+                    <div class="solution-heading">
+                        <img src="images/solution-comment-icon.png" alt="">
+                        <h2>Ansel Tech Academyなら<br>解決できます！</h2>
+                    </div>
+                    <div class="solution-container">
+                        <div class="solution-article">
+                            <img src="images/solution1.jpg" alt="">
+                            <div class="solution-content">
+                                <h3>充実したカリキュラム</h3>
+                                <p>
+                                    Ansel Tech Academyでは受講生の夢や目標にそって必要なプログラミング言語を選定しオーダーメイドカリキュラムを作成します。唯一無二のカリキュラムであなたのなりたいを実現します！
+                                </p>
+                            </div>
+                        </div>
+                        <div class="solution-article">
+                            <img src="images/solution2.jpg" alt="">
+                            <div class="solution-content">
+                                <h3>現役エンジニア監修の<br class="sp">難易度が高い課題</h3>
+                                <p>
+                                    実践的なスキルを身につけるには、リアルな開発現場を想定した課題に挑戦することが重要です。当スクールでは、現役エンジニアが監修した高度な課題を用意し、実務レベルの問題解決力を養います。実際のプロジェクトで求められるスキルを身につけ、即戦力として活躍できるエンジニアを目指しましょう。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="solution-article">
+                            <img src="images/solution3.jpg" alt="">
+                            <div class="solution-content">
+                                <h3>現役エンジニアの講師に質問できる</h3>
+                                <p>
+                                    学習中に生じる疑問は、経験豊富な現役エンジニア講師に直接質問できます。実務で培った知識やノウハウをもとに、最適な解決策をアドバイス。技術的な疑問だけでなく、キャリア相談や開発現場のリアルな話も聞けるため、エンジニアとしての成長を加速させることができます。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="solution-article">
+                            <img src="images/solution4.jpg" alt="">
+                            <div class="solution-content">
+                                <h3>一緒に学んでいる<br class="sp">仲間がいることで刺激になる</h3>
+                                <p>
+                                    独学ではモチベーションを維持するのが難しいこともありますが、当スクールでは同じ目標を持つ仲間と学ぶことで、お互いに刺激を受けながら成長できます。切磋琢磨しながら学習を進めることで、知識の定着が早まり、実践力もアップ。学習仲間との交流が、新たな気づきや成長のきっかけになります。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- スクール生の声 -->
+        <section class="voice" id="voice">
+            <div class="wrapper">
+                <div class="voice-inner">
+                    <div class="heading">
+                        <h2>VOICE</h2>
+                        <p>スクール生の声</p>
+                    </div>
+                    <div class="voice-container">
+                        <div class="voice-article">
+                            <img src="images/voice1.jpg" alt="">
+                            <div class="voice-content">
+                                <h3>Webデザインコース</h3>
+                                <div class="voice-tag">
+                                    <p>A・Tさん</p>
+                                    <p>女性</p>
+                                    <p>30代</p>
+                                </div>
+                                <p>
+                                    以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="voice-article">
+                            <img src="images/voice2.jpg" alt="">
+                            <div class="voice-content">
+                                <h3>プログラミングコース</h3>
+                                <div class="voice-tag">
+                                    <p>A・Tさん</p>
+                                    <p>男性</p>
+                                    <p>30代</p>
+                                </div>
+                                <p>
+                                    以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="voice-article">
+                            <img src="images/voice3.jpg" alt="">
+                            <div class="voice-content">
+                                <h3>Webエンジニアコース</h3>
+                                <div class="voice-tag">
+                                    <p>A・Tさん</p>
+                                    <p>女性</p>
+                                    <p>30代</p>
+                                </div>
+                                <p>
+                                    以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="voice-article">
+                            <img src="images/voice4.jpg" alt="">
+                            <div class="voice-content">
+                                <h3>フリーランスコース</h3>
+                                <div class="voice-tag">
+                                    <p>A・Tさん</p>
+                                    <p>男性</p>
+                                    <p>30代</p>
+                                </div>
+                                <p>
+                                    以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="voice-article">
+                            <img src="images/voice5.jpg" alt="">
+                            <div class="voice-content">
+                                <h3>副業コース</h3>
+                                <div class="voice-tag">
+                                    <p>A・Tさん</p>
+                                    <p>男性</p>
+                                    <p>30代</p>
+                                </div>
+                                <p>
+                                    以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="voice-article">
+                            <img src="images/voice6.jpg" alt="">
+                            <div class="voice-content">
+                                <h3>オーダーメイドコース</h3>
+                                <div class="voice-tag">
+                                    <p>A・Tさん</p>
+                                    <p>女性</p>
+                                    <p>30代</p>
+                                </div>
+                                <p>
+                                    以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENTRY -->
+        <section class="entry">
+            <div class="wrapper">
+                <div class="entry-wrapper">
+                    <div class="entry-inner">
+                        <div class="entry-heading">
+                            <img src="images/entry-icon.png" alt="">
+                            <div class="heading">
+                                <h2>ENTRY</h2>
+                                <p>無料面談申し込み</p>
+                            </div>
+                        </div>
+                        <p class="entry-text">
+                            キャリアに関する疑問や不安を相談したり、習得できるスキルやサポートについて説明を受けられる無料面談を実施しています。あなたの思いや夢を聞かせてください。
+                        </p>
+                        <div class="career">
+                            <p>キャリア相談からカリキュラム説明まで</p>
+                            <img src="images/entry-yellow-line.png" alt="">
+                        </div>
+                        <div class="free">
+                            <span>完</span>
+                            <span>全</span>
+                            <span>無</span>
+                            <span>料</span>
+                        </div>
+                        <div class="entry-btn"> <!--CTA-->
+                            <p>面談申込で10万円OFF！</p>
+                            <a href="#">無料面談に申し込む</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 

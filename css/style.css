@@ -4,25 +4,1054 @@ html {
 
 body {
     font-family: 'Hiragino Kaku Gothic Pro', 'Noto Sans JP', sans-serif;
+    /* background-color: #cccccc; */
 }
 
 :root {
     --white: #FFFFFF;
     --black: #333333;
+    --blue: #1F3D74;
+    --blue-02: #4273C6;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sp {
+    display: none;
 }
 
 /* ---------------------------メインビジュアル */
 .header-wrapper {
     width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
 }
 
+.header-inner {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+/* 背景写真 */
 .back-img {
     display: flex;
+    background-color: var(--blue);
+    position: relative;
 
     img {
-        height: 625px;
-        
+        width: 25vw;
+        min-height: 80vh;
+        opacity: 0.4;
+        display: block;
+        object-fit: cover;
     }
+}
+
+.above-img {
+    display: flex;
+}
+
+.under-img {
+    display: flex;
+}
+
+/* ハンバーガーメニュー */
+.hamburger {
+    width: 60px;
+    height: 60px;
+    background-color: var(--blue);
+    border-radius: 30px;
+    border: none;
+    box-shadow: 1px 1px 5px 0px var(--blue);
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    display: none;
+    z-index: 99;
+
+    span {
+        width: 75%;
+        height: 1px;
+        margin: 5px auto;
+        background-color: var(--white);
+        position: relative;
+        transition: ease .4s;
+        display: block;
+    }
+
+    p {
+        color: var(--white);
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 12px;
+    }
+}
+
+.hamburger span :nth-child(1) {
+    top: 0;
+}
+
+.hamburger span :nth-child(2) {
+    margin: 5px 0 0;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 5vw;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+/* キャッチコピー */
+.catch-copy {
+    background-color: var(--white);
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.copy-top {
+    font-size: clamp(1.875rem, 1.215rem + 2.82vw, 3.75rem);
+    background: linear-gradient(90deg, #153D88 0%, #6098FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    span {
+        font-size: clamp(1.313rem, 0.784rem + 2.25vw, 2.813rem);
+    }
+}
+
+.copy-bottom {
+    font-size: clamp(1.313rem, 0.982rem + 1.41vw, 2.25rem);
+    background: linear-gradient(90deg, #153D88 0%, #6098FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* 実績 */
+.achievements {
+    display: flex;
+}
+
+/* 転職成功率 */
+.job-change {
+    position: relative;
+    width: 25vw;
+
+    img {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+.job-change-item {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.success-rate {
+    color: var(--white);
+    font-size: clamp(1rem, 0.692rem + 1.31vw, 1.875rem);
+    font-weight: bold;
+    line-height: 1em;
+    -webkit-text-stroke: 1px #FF4A67;
+    text-stroke: 1px #FF4A67;
+}
+
+.percent {
+    color: var(--white);
+    font-size: clamp(2.438rem, 1.447rem + 4.23vw, 5.25rem);
+    font-weight: bold;
+    line-height: 1.2em;
+    letter-spacing: -0.1em;
+    -webkit-text-stroke: 2px #FF4A67;
+    text-stroke: 1px #FF4A67;
+
+    span {
+        font-size: 30px;
+        -webkit-text-stroke: 1px #FF4A67;
+        text-stroke: 1px #FF4A67;
+    }
+}
+
+/* 累計指導実績 */
+.guidance {
+    position: relative;
+    width: 24vw;
+
+    img {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+.guidance-item {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.teaching-results {
+    color: var(--white);
+    font-size: clamp(1rem, 0.692rem + 1.31vw, 1.875rem);
+    font-weight: bold;
+    line-height: 1em;
+    -webkit-text-stroke: 1px #FF4A67;
+    text-stroke: 1px #FF4A67;
+}
+
+.people {
+    color: var(--white);
+    font-size: clamp(1.688rem, 1.093rem + 2.54vw, 3.375rem);
+    font-weight: bold;
+    letter-spacing: -0.1em;
+    line-height: 2em;
+    -webkit-text-stroke: 2px #FF4A67;
+    text-stroke: 1px #FF4A67;
+
+    span {
+        font-size: 21px;
+        -webkit-text-stroke: 1px #FF4A67;
+        text-stroke: 1px #FF4A67;
+        letter-spacing: 0;
+    }
+}
+
+
+/* CTAボタン */
+.cta-btn-pc {
+    width: 80%;
+    min-width: 345px;
+    margin: 0 auto;
+
+    p {
+        font-size: 16px;
+        color: var(--black);
+        background-color: var(--white);
+        border: 1px solid #FF5B4F;
+        border-radius: 5px;
+        padding: 5px 15px;
+        width: fit-content;
+        margin: 0 auto -15px;
+        position: relative;
+        z-index: 11;
+    }
+
+    a {
+        font-size: 24px;
+        color: var(--white);
+        background: linear-gradient(125deg, #FF880B, #FF4A67);
+        border-radius: 5px;
+        width: 100%;
+        height: 76px;
+        display: block;
+        place-content: center;
+        text-align: center;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+.top-reverse {
+    display: none;
+}
+
+
+.cta-btn-sp {
+    display: none;
+    width: 80%;
+    min-width: 345px;
+    margin: 0 auto;
+
+    p {
+        font-size: 16px;
+        color: var(--black);
+        background-color: var(--white);
+        border: 1px solid #FF5B4F;
+        border-radius: 5px;
+        padding: 5px 15px;
+        width: fit-content;
+        margin: 0 auto -15px;
+        position: relative;
+        z-index: 11;
+    }
+
+    a {
+        font-size: 24px;
+        color: var(--white);
+        background: linear-gradient(125deg, #FF880B, #FF4A67);
+        border-radius: 5px;
+        width: 100%;
+        height: 76px;
+        display: block;
+        place-content: center;
+        text-align: center;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+
+/* ---------------------------Ansel Tech Academyとは */
+.about-inner {
+    position: relative;
+    height: 600px;
+    margin-bottom: 100px;
+}
+
+.about-content {
+    background: linear-gradient(90deg, #153D88 0%, #6098FF 100%);
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    z-index: 30;
+}
+
+.about-icon {
+    min-width: 74px;
+    height: 74px;
+    background-color: var(--white);
+    border-radius: 50%;
+    place-content: center;
+
+    img {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+    }
+}
+
+.about-heading {
+    color: var(--white);
+
+    h2 {
+        font-size: clamp(1.313rem, 1.114rem + 0.85vw, 1.875rem);
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+    }
+}
+
+.large-img {
+    width: 70%;
+    border-radius: 50px;
+    box-shadow: 15px 15px 0px 0px #6097FE;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+}
+
+.small-img {
+    width: 40%;
+    border-radius: 30px;
+    box-shadow: 15px 15px 0px 0px #6097FE;
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    z-index: 20;
+}
+
+
+/* ---------------------------FUTURE */
+.future-inner {
+    margin-bottom: 50px;
+}
+
+.heading {
+    width: 30%;
+    margin: 0 auto 50px;
+    text-align: center;
+
+    h2 {
+        font-size: 30px;
+        font-weight: 800;
+        background: linear-gradient(90deg, #153D88 0%, #6098FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-image: linear-gradient(90deg, #153D88 0%, #6098FF 100%);
+        border-image-slice: 1;
+        width: 60%;
+        margin: 0 auto 10px;
+    }
+
+    p {
+        font-size: 16px;
+        background: linear-gradient(90deg, #153D88 0%, #6098FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+/* 受講生紹介 */
+.future-article {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px 0px #D9E3F4;
+    margin-bottom: 20px;
+
+    img {
+        width: 276px;
+        height: 184px;
+    }
+}
+
+.future-content {
+    color: var(--black);
+
+    h3 {
+        font-size: 21px;
+        background:linear-gradient(transparent 70%, #FCFA67 60%);
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+}
+
+/* 受講生名 */
+.student {
+    display: flex;
+    gap: 36px;
+    margin-bottom: 20px;
+
+    .item {
+        font-size: 16px;
+        padding: 0 10px;
+        background-color: #D9E3F4;
+        border-radius: 10px;
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+/* 講座内容 */
+.course {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    .item {
+        font-size: 16px;
+        padding: 0 10px;
+        background-color: #D9E3F4;
+        border-radius: 10px;
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+
+/* ---------------------------ENTRY */
+.entry-inner {
+    background: linear-gradient(90deg, #153D88 0%, #6098FF 100%);
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 20px 0;
+}
+
+.entry-heading {
+
+    /* アイコン */
+    img {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto 10px;
+    }
+
+    .heading {
+        width: 25%;
+        margin: 0 auto 20px;
+        text-align: center;
+
+        /* ENTRY */
+        h2 {
+            background: linear-gradient(90deg, #FFFFFF 0%, #6098FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border-image: linear-gradient(90deg, #FFFFFF 0%, #6098FF 100%);
+            border-image-slice: 1;
+            margin: 0 auto 10px;
+        }
+
+        /* 無料面談申し込み */
+        p {
+            background: linear-gradient(90deg, #FFFFFF 0%, #6098FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.entry-text {
+    color: var(--white);
+    width: 70%;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+/* キャリア相談からカリキュラム説明まで */
+.career {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+        color: var(--white);
+        font-size: 21px;
+        font-weight: 500;
+        transform: rotate( -2deg );
+    }
+
+    img {
+        width: 438px;
+        margin: -15px auto 0;
+    }
+}
+
+/* 完全無料 */
+.free {
+    text-align: center;
+    margin-bottom: 20px;
+
+    span {
+        color: #D31E1E;
+        background-color: var(--white);
+        font-size: 45px;
+        font-weight: 600;
+        padding: 5px 10px;
+    }
+}
+
+/* ENTRYボタン */
+.entry-btn {
+    width: 40%;
+    min-width: 345px;
+    margin: 0 auto;
+
+    p {
+        font-size: 16px;
+        color: var(--black);
+        background-color: var(--white);
+        border: 1px solid #FF5B4F;
+        border-radius: 5px;
+        padding: 5px 15px;
+        width: fit-content;
+        margin: 0 auto -15px;
+        position: relative;
+        z-index: 11;
+    }
+
+    a {
+        font-size: 24px;
+        color: var(--white);
+        background: linear-gradient(125deg, #FF880B, #FF4A67);
+        border-radius: 5px;
+        width: 100%;
+        height: 76px;
+        display: block;
+        place-content: center;
+        text-align: center;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+
+/* ---------------------------挫折 */
+.problem-inner {
+    position: relative;
+    background: linear-gradient(#DADADA, #FFFFFF);
+    margin-bottom: 50px;
+    padding-top: 50px;
+
+    h2 {
+        color: var(--black);
+        font-size: 30px;
+        margin-bottom: 50px;
+        text-align: center;
+
+        span {
+            font-size: 21px;
+        }
+    }
+
+    > p {
+        color: #666666;
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+.problem-list {
+    width: fit-content;
+    margin: 0 auto 50px;
+
+    li {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 10px;
+        align-items: center;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
+        p {
+            color: #666666;
+            font-size: 24px;
+            font-weight: 600;
+        }
+    }
+}
+
+.problem-human {
+    width: 323px;
+    height: 242px;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+
+.problem-arrow {
+    width: 60px;
+    height: 107px;
+    margin: 0 auto;
+}
+
+
+/* ---------------------------解決 */
+.solution-inner {
+    margin-bottom: 100px;
+}
+
+.solution-heading {
+    background: linear-gradient(90deg, #153D88 0%, #6098FF 100%);
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto 50px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    img {
+        width: 72px;
+        height: 72px;
+    }
+
+    h2 {
+        color: var(--white);
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+.solution-article {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 50px;
+
+    img {
+        width: 300px;
+        height: 200px;
+        border-radius: 20px;
+    }
+}
+
+.solution-content {
+
+    h3 {
+        color: var(--blue-02);
+        font-size: 30px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--blue-02);
+    }
+}
+
+
+/* ---------------------------スクール生の声 */
+.voice-inner {
+    margin-bottom: 100px;
+}
+
+.voice-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.voice-article {
+    width: 345px;
+
+    img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.voice-content {
+
+    h3 {
+        color: #FF880B;
+        font-size: 21px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    > p {
+        color: var(--black);
+        font-size: 16px;
+    }
+}
+
+.voice-tag {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    p {
+        background-color: #DAE7FF;
+        padding: 0 10px;
+        border-radius: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------
+SP
+--------------------------------- */
+@media screen and (max-width: 767px) {
+    .sp {
+        display: block;
+    }
+
+  /* ----------------------------メインビジュアル */
+    .back-img {
+        flex-direction: column;
+
+        img {
+            width: 50vw;
+            min-height: 50vh;
+        }
+    }
+
+  /* ハンバーガーメニュー */
+    .hamburger {
+        display: block;
+    }
+
+    .header-content {
+        top: 27%;
+        left: 0;
+    }
+
+    .header-flex {
+        flex-direction: column;
+    }
+
+    /* キャッチコピー */
+    .catch-copy {
+        width: 100vw;
+        margin-bottom: 10px;
+        padding: 10px 15px;
+    }
+
+    .cta-btn-pc {
+        display: none;
+    }
+
+    .achievements {
+        width: 100%;
+    }
+
+    .job-change {
+        width: 50vw;
+    }
+
+    .guidance {
+        width: 50vw;
+    }
+
+    .guidance-item {
+        width: 100%;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .top-reverse {
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        bottom: 110px;
+        right: 15px;
+        z-index: 99;
+    }
+
+    .cta-btn-sp {
+        display: block;
+        position: fixed;
+        bottom: 15px;
+        right: 0;
+        left: 0;
+        z-index: 99;
+
+        a {
+            box-shadow: 1px 1px 5px 0px var(--black);
+        }
+    }
+
+
+    /* ----------------------------Ansel Tech Academyとは */
+    .about-inner {
+        width: 100%;
+        height: 100%;
+        padding: 0 15px;
+    }
+
+
+    .about-content {
+        flex-direction: column;
+        width: 100%;
+        position: static;
+    }
+
+    .large-img {
+        width: 100%;
+        position: static;
+        margin-bottom: 50px;
+    }
+
+    .small-img {
+        display: none;
+    }
+
+    .flex-sp {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    /* ----------------------------FUTURE */
+    .heading {
+        width: 100%;
+    }
+
+    .future-container {
+        padding: 0 15px;
+    }
+
+    .future-article {
+        flex-direction: column;
+        padding: 20px 10px;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    .future-content {
+
+        h3 {
+            font-size: 18px;
+            background: none;
+        }
+    }
+
+
+    /* ----------------------------ENTRY */
+    .entry-wrapper {
+        padding: 0 15px;
+    }
+
+    .entry-heading {
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .heading {
+            width: 70%;
+        }
+    }
+
+    .entry-text {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* キャリア相談からカリキュラム説明まで */
+    .career {
+
+        p {
+            font-size: 16px;
+        }
+
+        img {
+            width: 315px;
+            margin: -10px auto 10px;
+        }
+    }
+
+    /* 完全無料 */
+    .free {
+
+        span {
+            font-size: 30px;
+        }
+    }
+
+
+    /* 挫折 */
+    .problem-inner {
+        padding: 50px 15px 0;
+
+        h2 {
+            font-size: 21px;
+            margin-bottom: 20px;
+
+            span {
+                font-size: 16px;
+            }
+        }
+
+        > p {
+            font-size: 21px;
+        }
+    }
+
+    .problem-list {
+        margin-bottom: 20px;
+
+        li {
+
+            p {
+                font-size: 21px;
+            }
+        }
+    }
+
+    .problem-human {
+        display: none;
+    }
+
+
+    /* ---------------------------解決 */
+    .solution-heading {
+        flex-direction: column;
+        gap: 0;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        h2 {
+            font-size: 21px;
+        }
+    }
+
+    .solution-article {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .solution-content {
+
+        h3 {
+            font-size: 21px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+
+    /* ---------------------------スクール生の声 */
+    .voice-inner {
+        padding: 0 15px;
+    }
+
+    .voice-container {
+        gap: 50px;
+    }
+
+
 }
