@@ -21,11 +21,89 @@
                         <img src="images/mv4.jpg" alt="">
                     </div>
                 </div>
-                <button class="hamburger"> <!--ハンバーガーメニュー-->
+                <button class="hamburger" id="js-hamburger"> <!--ハンバーガーメニュー-->
                     <span></span>
                     <span></span>
                     <p>menu</p>
                 </button>
+
+                <!-- ナビゲーションメニュー展開 -->
+                <nav class="header-nav" id="js-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#about">
+                                <p>Ansel Tech Academyとは？</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#future">
+                                <p>受講後の未来</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#problem">
+                                <p>上手くいかなかった理由</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#solution">
+                                <p>アカデミーの特徴</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#voice">
+                                <p>卒業生の声</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#reason">
+                                <p>結果が出る理由</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#instructor">
+                                <p>講師紹介</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#curriculum">
+                                <p>カリキュラム</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#results">
+                                <p>制作物</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#comparison">
+                                <p>他スクールとの違い</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#price">
+                                <p>受講料金</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#faq">
+                                <p>よくある質問</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
                 <div class="header-content">
                     <div class="header-flex">
@@ -57,10 +135,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="top-reverse">
+                <div class="top-reverse" id="top-btn">
                     <img src="images/top-arrow.png" alt="">
                 </div>
-                <div class="cta-btn-sp"> <!--CTA-->
+                <!--下部固定CTA-->
+                <div class="cta-btn-sp">
                     <p>面談申込で10万円OFF！</p>
                     <a href="#">無料面談に申し込む</a>
                 </div>
@@ -475,6 +554,7 @@
             </div>
         </section>
 
+        <!-- 講師紹介 -->
         <section class="instructor" id="instructor">
             <div class="instructor-wrapper">
                 <div class="instructor-inner">
@@ -496,7 +576,7 @@
         </section>
 
         <!-- カリキュラム -->
-        <section class="curriculum">
+        <section class="curriculum" id="curriculum">
             <div class="wrapper">
                 <div class="curriculum-inner">
                     <div class="heading">
@@ -589,7 +669,7 @@
         </section>
 
         <!-- 制作実績 -->
-        <section class="results">
+        <section class="results" id="results">
             <div class="wrapper">
                 <div class="results-inner">
                     <div class="heading">
@@ -628,7 +708,7 @@
         </section>
 
         <!-- 他スクールとの比較 -->
-        <section class="comparison">
+        <section class="comparison" id="comparison">
             <div class="wrapper">
                 <div class="comparison-inner">
                     <div class="heading">
@@ -683,7 +763,7 @@
         </section>
 
         <!-- 受講料金 -->
-        <section class="price">
+        <section class="price" id="price">
             <div class="wrapper">
                 <div class="price-wrapper">
                     <div class="price-inner">
@@ -706,7 +786,7 @@
         </section>
 
         <!-- よくある質問 -->
-        <section class="faq">
+        <section class="faq" id="faq">
             <div class="wrapper">
                 <div class="faq-inner">
                     <div class="heading">
@@ -890,19 +970,19 @@
                     <a href="#">Ansel Tech Academy</a>
                     <img src="images/Ansel-logo.png" alt="">
                 </div>
-                <div class="nav">
-                    <ul class="nav-list">
+                <div class="footer-nav">
+                    <ul class="footer-nav-list">
                         <li><a href="#">Ansel Tech Academyとは</a></li>
                         <li><a href="#">受講後の未来</a></li>
                         <li><a href="#">Ansel Tech Academyの特徴</a></li>
                     </ul>
-                    <ul class="nav-list">
+                    <ul class="footer-nav-list">
                         <li><a href="#">スクール生の声</a></li>
                         <li><a href="#">結果が出る理由</a></li>
                         <li><a href="#">講師紹介</a></li>
                         <li><a href="#">カリキュラム</a></li>
                     </ul>
-                    <ul class="nav-list">
+                    <ul class="footer-nav-list">
                         <li><a href="#">制作物</a></li>
                         <li><a href="#">他スクールとの違い</a></li>
                         <li><a href="#">よくある質問</a></li>
