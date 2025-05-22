@@ -38,6 +38,11 @@ ul, li {
     display: none;
 }
 
+button {
+    border: none;
+    background: none;
+}
+
 /* ---------------------------メインビジュアル */
 .header-wrapper {
     width: 100%;
@@ -502,7 +507,7 @@ ul, li {
     padding: 20px 0;
 }
 
-.entry-heading {
+.blue-heading {
 
     /* アイコン */
     img {
@@ -780,6 +785,134 @@ ul, li {
 }
 
 
+/* ---------------------------結果が出る理由 */
+.back-color {
+    background: linear-gradient(#4273C6 0%, #BAD4FF 100%);
+    margin-bottom: 50px;
+    padding: 50px 0;
+}
+
+.reason-container {
+    margin-top: 50px;
+}
+
+.reason-wrap {
+    margin-bottom: 50px;
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid #1F3D74;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 30px;
+    z-index: 20;
+}
+
+.reason-number {
+    position: absolute;
+    top: 1.5rem;
+    left: -8rem;
+}
+
+.reason-flex {
+    display: flex;
+    gap: 20px;
+    padding: 50px 40px;
+    background-color: var(--white);
+    z-index: 10;
+
+    img {
+        width: 48%;
+        height: 330px;
+        object-fit: cover;
+    }
+}
+
+.reason-content {
+
+    h3 {
+        color: var(--blue-02);
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: var(--black);
+    }
+}
+
+.space {
+    margin-bottom: 0;
+}
+
+
+/* ---------------------------講師紹介 */
+.instructor {
+    display: none;
+}
+
+.instructor-inner {
+    position: relative;
+
+    > img {
+        width: 80%;
+        min-height: 350px;
+        margin-left: auto;
+        object-fit: fill;
+    }
+
+    .heading {
+        max-width: 1080px;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 13%;
+    }
+}
+
+.instructor-btn {
+
+    button {
+
+    }
+
+    img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+
+/* ---------------------------カリキュラム */
+.curriculum-inner {
+
+    .heading {
+        width: 40%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -796,6 +929,7 @@ ul, li {
 SP
 --------------------------------- */
 @media screen and (max-width: 767px) {
+
     .sp {
         display: block;
     }
@@ -941,7 +1075,7 @@ SP
         padding: 0 15px;
     }
 
-    .entry-heading {
+    .blue-heading {
 
         img {
             width: 30px;
@@ -979,8 +1113,12 @@ SP
         }
     }
 
+    .entry-btn {
+        padding: 0 15px;
+    }
 
-    /* 挫折 */
+
+    /* --------------------------挫折 */
     .problem-inner {
         padding: 50px 15px 0;
 
@@ -1053,5 +1191,43 @@ SP
         gap: 50px;
     }
 
+
+    /* ---------------------------結果が出る理由 */
+    .reason-inner {
+        padding: 0 15px;
+    }
+
+    .reason-wrap {
+        margin-bottom: 20px;
+    }
+
+    .triangle {
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid #1F3D74;
+    font-size: 21px;
+    }
+
+    .reason-number {
+        position: absolute;
+        top: 1rem;
+        left: -5.5rem;
+    }
+
+    .reason-flex {
+        flex-direction: column;
+        padding: 20px 15px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .reason-content {
+
+        h3 {
+            font-size: 21px;
+        }
+    }
 
 }
