@@ -4,7 +4,6 @@ html {
 
 body {
     font-family: 'Hiragino Kaku Gothic Pro', 'Noto Sans JP', sans-serif;
-    /* background-color: #cccccc; */
 }
 
 :root {
@@ -890,15 +889,362 @@ button {
 
 /* ---------------------------カリキュラム */
 .curriculum-inner {
+    margin-bottom: 100px;
 
     .heading {
         width: 40%;
     }
 }
 
+.curriculum-container {
+    display: flex;
+    gap: 12px;
+}
+
+/* フロントエンド入門 */
+.front-introduction {
+    background-color: #FFF0E0;
+    padding: 20px;
+    flex: 1;
+}
+
+.curriculum-title {
+    color: var(--blue-02);
+    font-size: 21px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.curriculum-text {
+    color: var(--black);
+    letter-spacing: 0.05em;
+}
+
+.curriculum-icon {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    /* 言語アイコンサイズ */
+    img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* フロントエンド基礎 */
+.front-basic {
+    background-color: #FFDED9;
+    padding: 20px;
+    flex: 1;
+}
+
+/* バックエンド入門 */
+.back-introduction {
+    background-color: #F1F1FF;
+    padding: 20px;
+    flex: 1;
+}
+
+/* インフラクラウド基礎 */
+.infra-basic {
+    background-color: #E7F3FF;
+    padding: 20px;
+    flex: 1;
+}
 
 
+/* ---------------------------制作実績 */
+.results-inner {
+    margin-bottom: 100px;
 
+    .heading {
+        margin-bottom: 10px;
+    }
+
+}
+
+.results-text {
+    color: var(--black);
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.results-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.results-content {
+
+    img {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    > p {
+        color: var(--black);
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+.results-tag {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    p {
+        background-color: #DAE7FF;
+        padding: 0 10px;
+        border-radius: 5px;
+    }
+}
+
+
+/* ---------------------------他スクールとの比較 */
+.comparison-inner {
+    margin-bottom: 100px;
+
+    .heading {
+        width: 50%;
+    }
+}
+
+.scroll-arrow {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+
+    th, td {
+        border: 1px solid #B3B3B3;
+        padding: 15px 0;
+    }
+}
+
+.head {
+    color: var(--black);
+    background-color: #EAEAEA;
+    font-weight: 400;
+    width: 18%;
+}
+
+.th-space {
+    border: none;
+}
+
+.ansel {
+    color: var(--white);
+    background-color: var(--blue-02);
+    width: 25%;
+}
+
+.ansel-item {
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #E1EFFF;
+}
+
+.column {
+    color: var(--white);
+    background-color: #787878;
+}
+
+
+/* ---------------------------受講料金 */
+.price-inner {
+    background: linear-gradient(90deg, #153D88 0%, #6098FF 100%);
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 20px 0;
+}
+
+.price-title {
+    margin-bottom: 20px;
+
+    h2 {
+        color: var(--white);
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: var(--white);
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+.price-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.price-content {
+    text-align: center;
+
+    .above {
+        color: var(--white);
+        font-size: 21px;
+    }
+
+    .under {
+        color: #FCFA67;
+        font-size: 45px;
+        font-weight: 600;
+    }
+}
+
+.price-btn {
+    width: 30%;
+
+    a {
+        font-size: 24px;
+        color: var(--white);
+        background: linear-gradient(125deg, #FF880B, #FF4A67);
+        border-radius: 5px;
+        width: 100%;
+        height: 76px;
+        display: block;
+        place-content: center;
+        text-align: center;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+
+/* ---------------------------よくある質問 */
+.faq-container {
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+.faq-content {
+    margin-bottom: 20px;
+}
+
+.question {
+    display: flex;
+    align-items: first baseline;
+}
+
+.q {
+    color: var(--white);
+    background-color: var(--blue-02);
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    place-content: center;
+    border-radius: 10px;
+    position: relative;
+    z-index: 20;
+}
+
+.q-text {
+    color: var(--blue-02);
+    background-color: #DFEBFF;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    border-radius: 10px;
+    margin-left: -20px;
+    padding: 30px 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.answer {
+    display: flex;
+    align-items: first baseline;
+}
+
+.a {
+    color: var(--white);
+    background-color: #FF880B;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    place-content: center;
+    border-radius: 10px;
+    position: relative;
+    z-index: 20;
+}
+
+.a-text {
+    color: var(--black);
+    font-size: 16px;
+    width: 100%;
+    border-radius: 10px;
+    margin-left: -20px;
+    padding: 30px 40px;
+    position: relative;
+    z-index: 10;
+}
+
+
+/* ---------------------------フッター */
+.footer-inner {
+    background-color: var(--blue);
+    padding-top: 50px;
+}
+
+.footer-heading {
+    text-align: center;
+    margin-bottom: 50px;
+
+    a {
+        color: var(--white);
+        font-size: 30px;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    img {
+        background-color: var(--white);
+        width: 200px;
+        margin: 0 auto;
+        padding: 5px 0;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.nav-list {
+
+    li {
+        margin-bottom: 20px;
+
+        a {
+            color: var(--white);
+        }
+    }
+}
+
+.copyright {
+    color: var(--white);
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
+}
 
 
 
@@ -1229,5 +1575,153 @@ SP
             font-size: 21px;
         }
     }
+
+
+    /* ---------------------------カリキュラム */
+    .curriculum-inner {
+        padding: 0 15px;
+    }
+
+    .curriculum-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    /* ---------------------------制作実績 */
+    .curriculum-inner {
+        padding: 0 15px;
+    }
+
+    .results-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
+    /* ---------------------------他スクールとの比較 */
+    .comparison-inner {
+
+        .heading {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .scroll-arrow {
+        display: flex;
+        gap: 10px;
+        justify-content: end;
+        align-items: center;
+        margin-right: 15px;
+        margin-bottom: 10px;
+
+        p {
+            color: #666666;
+            font-size: 12px;
+        }
+
+        img {
+            width: 30px;
+            height: 18px;
+        }
+    }
+
+    .comparison-content {
+        overflow: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    table {
+        width: 810px;
+        white-space: nowrap;
+        margin: 0 15px;
+    }
+
+    .column {
+        width: 10%;
+    }
+
+
+    /* ---------------------------受講料金 */
+    .price-wrapper {
+        padding: 0 15px;
+    }
+
+    .price-title {
+
+        h2 {
+            font-size: 21px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .price-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .price-content {
+
+        .above {
+            font-size: 16px;
+        }
+
+        .under {
+            font-size: 30px;
+        }
+    }
+
+    .price-btn {
+        width: 100%;
+        padding: 0 20px;
+
+        a {
+            font-size: 21px;
+        }
+    }
+
+
+    /* ---------------------------よくある質問 */
+    .faq-inner {
+        padding: 0 15px;
+    }
+
+
+    /* ---------------------------フッター */
+    .footer-inner {
+        padding-bottom: 120px;
+    }
+
+    .footer-heading {
+
+        a {
+            font-size: 21px;
+        }
+
+        img {
+            width: 140px;
+        }
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+
+    .nav-list {
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
 
 }
