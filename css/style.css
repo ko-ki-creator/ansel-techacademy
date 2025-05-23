@@ -442,18 +442,6 @@ button {
     }
 }
 
-/* フェードイン */
-.faid_in {
-    transition: 0.8s ease-in-out;
-    transform: translateY(30px);
-    opacity: 0;
-    }
-
-.faid_in.on {
-    transform: translateY(0);
-    opacity: 1.0;
-}
-
 
 /* ---------------------------Ansel Tech Academyとは */
 .about-inner {
@@ -971,9 +959,6 @@ button {
 
 
 /* ---------------------------講師紹介 */
-.instructor {
-    
-}
 
 .instructor-inner {
     margin-bottom: 100px;
