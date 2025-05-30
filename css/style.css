@@ -1746,6 +1746,10 @@ SP
     /* ---------------------------カリキュラム */
     .curriculum-inner {
         padding: 0 15px;
+
+        .heading {
+            width: 90%;
+        }
     }
 
     .curriculum-container {
