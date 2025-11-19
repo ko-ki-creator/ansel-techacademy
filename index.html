@@ -4,9 +4,1111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PF | Ansel Tech Academy</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Ansel Tech Academy</h1>
-    <h2>Ansel Tech Academy</h2>
+    <header>
+        <div class="header-wrapper">
+            <div class="header-inner">
+                <div class="back-img"> <!--背景画像-->
+                    <div class="above-img">
+                        <img src="images/mv1.jpg" alt="">
+                        <img src="images/mv2.jpg" alt="">
+                    </div>
+                    <div class="under-img">
+                        <img src="images/mv3.jpg" alt="">
+                        <img src="images/mv4.jpg" alt="">
+                    </div>
+                </div>
+                <button class="hamburger" id="js-hamburger"> <!--ハンバーガーメニュー-->
+                    <span></span>
+                    <span></span>
+                    <p>menu</p>
+                </button>
+
+                <!-- ナビゲーションメニュー展開 -->
+                <nav class="header-nav" id="js-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#about">
+                                <p>Ansel Tech Academyとは？</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#future">
+                                <p>受講後の未来</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#problem">
+                                <p>上手くいかなかった理由</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#solution">
+                                <p>アカデミーの特徴</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#voice">
+                                <p>卒業生の声</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#reason">
+                                <p>結果が出る理由</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#instructor">
+                                <p>講師紹介</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#curriculum">
+                                <p>カリキュラム</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#results">
+                                <p>制作物</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#comparison">
+                                <p>他スクールとの違い</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#price">
+                                <p>受講料金</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#faq">
+                                <p>よくある質問</p>
+                                <img src="images/nav-arrow.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-content">
+                    <div class="header-flex">
+                        <div class="copy-cta">
+                            <div class="catch-copy"> <!--キャッチコピー-->
+                                <p class="copy-top">現役エンジニア<span>に学ぶ</span></p>
+                                <p class="copy-bottom">ハイレベルプログラミングスクール</p>
+                            </div>
+                            <div class="cta-btn-pc"> <!--CTA-->
+                                <p>面談申込で10万円OFF！</p>
+                                <a class="btn_shining" href="#">無料面談に申し込む</a>
+                            </div>
+                        </div>
+                        <div class="achievements"> <!--実績-->
+                            <div class="job-change">
+                                <img src="images/mv-tree.png" alt="">
+                                <div class="job-change-item">
+                                    <p class="success-rate">転職<br class="pc">成功率</p>
+                                    <p class="percent">99<span>%</span></p>
+                                </div>
+                            </div>
+                            <div class="guidance">
+                                <img src="images/mv-tree.png" alt="">
+                                <div class="guidance-item">
+                                    <p class="teaching-results">累計<br class="pc">指導実績</p>
+                                    <p class="people">45,000<span>名以上</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-reverse" id="top-btn">
+                    <img src="images/top-arrow.png" alt="">
+                </div>
+                <!--下部固定CTA-->
+                <div class="cta-btn-sp">
+                    <p>面談申込で10万円OFF！</p>
+                    <a class="btn_shining" href="#">無料面談に申し込む</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Ansel Tech Academyとは -->
+        <section class="about" id="about">
+            <div class="wrapper">
+                <div class="about-inner multiple-list js-scroll-trigger">
+                    <div class="flex-sp multiple-item u-fade-type-up">
+                        <div class="about-content">
+                            <div class="about-icon"><img src="images/about-icon.png" alt=""></div>
+                            <div class="about-heading">
+                                <h2>Ansel Tech Academyとは</h2>
+                                <p>
+                                    厳選された現役エンジニアが講師を担当する、<br>
+                                    ハイレベルなプログラミングスクールを提供しています。<br>
+                                    スクール受講中は、IT系資格取得代を全般補助！
+                                </p>
+                            </div>
+                        </div>
+                        <img class="large-img" src="images/about1.jpg" alt="">
+                    </div>
+                    <img class="small-img multiple-item u-fade-type-up" src="images/about2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- 受講することでこんな未来を手に入れられる -->
+        <section class="future" id="future">
+            <div class="wrapper">
+                <div class="future-inner">
+                    <div class="heading">
+                        <h2>FUTURE</h2>
+                        <p>受講することでこんな未来を手に入れられる</p>
+                    </div>
+                    <div class="future-container multiple-list js-scroll-trigger">
+                        <div class="future-article multiple-item u-fade-type-up">
+                            <img src="images/future1.jpg" alt="">
+                            <div class="future-content">
+                                <h3>公務員から<br class="sp">フロントエンジニアとして活躍</h3>
+                                <div class="student">
+                                    <p class="item">受講生</p>
+                                    <p class="name">市川 美月  様</p>
+                                </div>
+                                <div class="course">
+                                    <p class="item">講座内容</p>
+                                    <p class="name">HTML/CSS/JavaScript/<br class="sp">Figma/Photoshop</p>
+                                </div>
+                                <p>以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。</p>
+                            </div>
+                        </div>
+                        <div class="future-article multiple-item u-fade-type-up">
+                            <img src="images/future2.jpg" alt="">
+                            <div class="future-content">
+                                <h3>パチンコ店員から<br class="sp">バックエンドエンジニアとして活躍</h3>
+                                <div class="student">
+                                    <p class="item">受講生</p>
+                                    <p class="name">樋口 大輔  様</p>
+                                </div>
+                                <div class="course">
+                                    <p class="item">講座内容</p>
+                                    <p class="name">PHP/Python/Java</p>
+                                </div>
+                                <p>半年間で3つの資格を取得し、37歳未経験からエンジニア転職することができました。</p>
+                            </div>
+                        </div>
+                        <div class="future-article multiple-item u-fade-type-up">
+                            <img src="images/future3.jpg" alt="">
+                            <div class="future-content">
+                                <h3>主婦から<br class="sp">フリーランスエンジニアとして活躍</h3>
+                                <div class="student">
+                                    <p class="item">受講生</p>
+                                    <p class="name">松下 ひろこ  様</p>
+                                </div>
+                                <div class="course">
+                                    <p class="item">講座内容</p>
+                                    <p class="name">HTML/CSS/JavaScript/PHP</p>
+                                </div>
+                                <p>子育てと学習を両立させ、現在は月収50万円ほど稼げるようになりました。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENTRY -->
+        <section class="entry">
+            <div class="wrapper">
+                <div class="entry-wrapper">
+                    <div class="entry-inner multiple-list js-scroll-trigger">
+                        <div class="blue-heading">
+                            <img src="images/entry-icon.png" alt="">
+                            <div class="heading">
+                                <h2>ENTRY</h2>
+                                <p>無料面談申し込み</p>
+                            </div>
+                        </div>
+                        <p class="entry-text">
+                            キャリアに関する疑問や不安を相談したり、習得できるスキルやサポートについて説明を受けられる無料面談を実施しています。あなたの思いや夢を聞かせてください。
+                        </p>
+                        <div class="career">
+                            <p>キャリア相談からカリキュラム説明まで</p>
+                            <img src="images/entry-yellow-line.png" alt="">
+                        </div>
+                        <div class="free">
+                            <span>完</span>
+                            <span>全</span>
+                            <span>無</span>
+                            <span>料</span>
+                        </div>
+                        <div class="entry-btn multiple-item u-fade-type-up"> <!--CTA-->
+                            <p>面談申込で10万円OFF！</p>
+                            <a class="btn_shining" href="#">無料面談に申し込む</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 挫折 -->
+        <section class="problem" id="problem">
+            <div class="wrapper">
+                <div class="problem-inner">
+                    <h2>
+                        プログラミングを<br class="sp">独学しようとしても<br>
+                        <span>約</span>90<span>%</span>は挫折します
+                    </h2>
+                    <div class="problem-list">
+                        <ul class="multiple-list js-scroll-trigger">
+                            <li class="multiple-item u-fade-type-up">
+                                <img src="images/problem-check-icon.png" alt="">
+                                <p>独学で学んでいた</p>
+                            </li>
+                            <li class="multiple-item u-fade-type-up">
+                                <img src="images/problem-check-icon.png" alt="">
+                                <p>教材が合わない</p>
+                            </li>
+                            <li class="multiple-item u-fade-type-up">
+                                <img src="images/problem-check-icon.png" alt="">
+                                <p>質問できる人がいない</p>
+                            </li>
+                            <li class="multiple-item u-fade-type-up">
+                                <img src="images/problem-check-icon.png" alt="">
+                                <p>モチベーション維持が難しい</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="problem-human" src="images/problem-human.png" alt="">
+                    <p>などの理由があります</p>
+                    <img class="problem-arrow" src="images/problem-arrow.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- 解決 -->
+        <section class="solution" id="solution">
+            <div class="wrapper">
+                <div class="solution-inner">
+                    <div class="solution-heading">
+                        <img src="images/solution-comment-icon.png" alt="">
+                        <h2>Ansel Tech Academyなら<br>解決できます！</h2>
+                    </div>
+                    <div class="solution-container multiple-list js-scroll-trigger">
+                        <div class="solution-article multiple-item u-fade-type-up">
+                            <img src="images/solution1.jpg" alt="">
+                            <div class="solution-content">
+                                <h3>充実したカリキュラム</h3>
+                                <p>
+                                    Ansel Tech Academyでは受講生の夢や目標にそって必要なプログラミング言語を選定しオーダーメイドカリキュラムを作成します。唯一無二のカリキュラムであなたのなりたいを実現します！
+                                </p>
+                            </div>
+                        </div>
+                        <div class="solution-article multiple-item u-fade-type-up">
+                            <img src="images/solution2.jpg" alt="">
+                            <div class="solution-content">
+                                <h3>現役エンジニア監修の<br class="sp">難易度が高い課題</h3>
+                                <p>
+                                    実践的なスキルを身につけるには、リアルな開発現場を想定した課題に挑戦することが重要です。当スクールでは、現役エンジニアが監修した高度な課題を用意し、実務レベルの問題解決力を養います。実際のプロジェクトで求められるスキルを身につけ、即戦力として活躍できるエンジニアを目指しましょう。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="solution-article multiple-item u-fade-type-up">
+                            <img src="images/solution3.jpg" alt="">
+                            <div class="solution-content">
+                                <h3>現役エンジニアの講師に質問できる</h3>
+                                <p>
+                                    学習中に生じる疑問は、経験豊富な現役エンジニア講師に直接質問できます。実務で培った知識やノウハウをもとに、最適な解決策をアドバイス。技術的な疑問だけでなく、キャリア相談や開発現場のリアルな話も聞けるため、エンジニアとしての成長を加速させることができます。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="solution-article multiple-item u-fade-type-up">
+                            <img src="images/solution4.jpg" alt="">
+                            <div class="solution-content">
+                                <h3>一緒に学んでいる<br class="sp">仲間がいることで刺激になる</h3>
+                                <p>
+                                    独学ではモチベーションを維持するのが難しいこともありますが、当スクールでは同じ目標を持つ仲間と学ぶことで、お互いに刺激を受けながら成長できます。切磋琢磨しながら学習を進めることで、知識の定着が早まり、実践力もアップ。学習仲間との交流が、新たな気づきや成長のきっかけになります。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- スクール生の声 -->
+        <section class="voice" id="voice">
+            <div class="wrapper">
+                <div class="voice-inner">
+                    <div class="heading">
+                        <h2>VOICE</h2>
+                        <p>スクール生の声</p>
+                    </div>
+                    <div class="voice-container multiple-list js-scroll-trigger">
+                        <div class="voice-article multiple-item u-fade-type-up">
+                            <img src="images/voice1.jpg" alt="Webデザインコース">
+                            <div class="voice-content">
+                                <h3>Webデザインコース</h3>
+                                <div class="voice-tag">
+                                    <p>A・Tさん</p>
+                                    <p>女性</p>
+                                    <p>30代</p>
+                                </div>
+                                <p>
+                                    以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="voice-article multiple-item u-fade-type-up">
+                            <img src="images/voice2.jpg" alt="プログラミングコース">
+                            <div class="voice-content">
+                                <h3>プログラミングコース</h3>
+                                <div class="voice-tag">
+                                    <p>A・Tさん</p>
+                                    <p>男性</p>
+                                    <p>30代</p>
+                                </div>
+                                <p>
+                                    以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="voice-article multiple-item u-fade-type-up">
+                            <img src="images/voice3.jpg" alt="Webエンジニアコース">
+                            <div class="voice-content">
+                                <h3>Webエンジニアコース</h3>
+                                <div class="voice-tag">
+                                    <p>A・Tさん</p>
+                                    <p>女性</p>
+                                    <p>30代</p>
+                                </div>
+                                <p>
+                                    以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="voice-article multiple-item u-fade-type-up">
+                            <img src="images/voice4.jpg" alt="フリーランスコース">
+                            <div class="voice-content">
+                                <h3>フリーランスコース</h3>
+                                <div class="voice-tag">
+                                    <p>A・Tさん</p>
+                                    <p>男性</p>
+                                    <p>30代</p>
+                                </div>
+                                <p>
+                                    以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="voice-article multiple-item u-fade-type-up">
+                            <img src="images/voice5.jpg" alt="副業コース">
+                            <div class="voice-content">
+                                <h3>副業コース</h3>
+                                <div class="voice-tag">
+                                    <p>A・Tさん</p>
+                                    <p>男性</p>
+                                    <p>30代</p>
+                                </div>
+                                <p>
+                                    以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="voice-article multiple-item u-fade-type-up">
+                            <img src="images/voice6.jpg" alt="オーダーメイドコース">
+                            <div class="voice-content">
+                                <h3>オーダーメイドコース</h3>
+                                <div class="voice-tag">
+                                    <p>A・Tさん</p>
+                                    <p>女性</p>
+                                    <p>30代</p>
+                                </div>
+                                <p>
+                                    以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。以前と比べて、働く時間が半分になったにも関わらず、収入は高くなりました。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENTRY -->
+        <section class="entry">
+            <div class="wrapper">
+                <div class="entry-wrapper">
+                    <div class="entry-inner multiple-list js-scroll-trigger">
+                        <div class="blue-heading">
+                            <img src="images/entry-icon.png" alt="">
+                            <div class="heading">
+                                <h2>ENTRY</h2>
+                                <p>無料面談申し込み</p>
+                            </div>
+                        </div>
+                        <p class="entry-text">
+                            キャリアに関する疑問や不安を相談したり、習得できるスキルやサポートについて説明を受けられる無料面談を実施しています。あなたの思いや夢を聞かせてください。
+                        </p>
+                        <div class="career">
+                            <p>キャリア相談からカリキュラム説明まで</p>
+                            <img src="images/entry-yellow-line.png" alt="">
+                        </div>
+                        <div class="free">
+                            <span>完</span>
+                            <span>全</span>
+                            <span>無</span>
+                            <span>料</span>
+                        </div>
+                        <div class="entry-btn multiple-item u-fade-type-up"> <!--CTA-->
+                            <p>面談申込で10万円OFF！</p>
+                            <a class="btn_shining" href="#">無料面談に申し込む</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 結果が出る理由 -->
+        <section class="reason" id="reason">
+            <div class="back-color">
+                <div class="wrapper">
+                    <div class="reason-inner">
+                        <div class="blue-heading">
+                            <img src="images/entry-icon.png" alt="">
+                            <div class="heading">
+                                <h2>REASON</h2>
+                                <p>結果が出る理由</p>
+                            </div>
+                        </div>
+                        <div class="reason-container multiple-list js-scroll-trigger">
+                            <div class="reason-wrap multiple-item u-fade-type-up">
+                                <div class="triangle">
+                                    <p class="reason-number">01</p>
+                                </div>
+                                <div class="reason-flex">
+                                    <img src="images/reason1.jpg" alt="">
+                                    <div class="reason-content">
+                                        <h3>
+                                            未経験から稼げるクリエイターへ<br>
+                                            経験豊富なメンターの<br>
+                                            充実したサポート体制
+                                        </h3>
+                                        <p>
+                                            Ansel Tech Academyの学習カリキュラムは、「学習したスキルを将来に役立たせる」という明確なゴールのもと、未経験から稼げるクリエイターへのロードマップとして、基礎知識の学習から、課題制作など実践的なカリキュラムを採用しているプログラミングスクールです。現役クリエイターがメンターとなり、質問し放題のチャットサポートや、オンラインでの直接指導や個別キャリア相談など、Web制作者になる為の徹底的なサポート体制が整っています。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reason-wrap multiple-item u-fade-type-up">
+                                <div class="triangle">
+                                    <p class="reason-number">02</p>
+                                </div>
+                                <div class="reason-flex">
+                                    <img src="images/reason2.jpg" alt="">
+                                    <div class="reason-content">
+                                        <h3>
+                                            実務を見据えた<br>
+                                            実践的プロジェクト方式による<br>
+                                            カリキュラム
+                                        </h3>
+                                        <p>
+                                            Ansel Tech Academyの学習コースでは、将来IT業界へ転職や副業をする際に役立つ課題制作が含まれている等プロジェクト方式によるカリキュラムを採用しています。実際に学習の中で手を動かして制作物を作る中で、分からない事や行き詰る事があればメンターに相談でき、制作物は転職や案件獲得の際に重要となるポートフォリオとしても掲載する事ができます。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reason-wrap space multiple-item u-fade-type-up">
+                                <div class="triangle">
+                                    <p class="reason-number">03</p>
+                                </div>
+                                <div class="reason-flex">
+                                    <img src="images/reason3.jpg" alt="">
+                                    <div class="reason-content">
+                                        <h3>
+                                            業界最安クラスの受講費用<br>
+                                            Ansel Tech Academyなら<br>
+                                            追加費用一切なし
+                                        </h3>
+                                        <p>
+                                            Ansel Tech Academyの学習カリキュラムは、「学習したスキルを将来に役立たせる」という明確なゴールのもと、未経験から稼げるクリエイターへのロードマップとして、基礎知識の学習から、課題制作など実践的なカリキュラムを採用しているプログラミングスクールです。現役クリエイターがメンターとなり、質問し放題のチャットサポートや、オンラインでの直接指導や個別キャリア相談など、Web制作者になる為の徹底的なサポート体制が整っています。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 講師紹介 -->
+        <section class="instructor" id="instructor">
+            <div class="instructor-wrapper">
+                <div class="instructor-inner">
+                    <div class="heading">
+                        <h2>INSTRUCTOR</h2>
+                        <p>講師紹介</p>
+                    </div>
+                    <div class="instructor-container multiple-list js-scroll-trigger">
+                        <div class="instructor-flex multiple-item u-fade-type-up">
+                            <div class="instructor-content">
+                                <div class="img">
+                                    <img src="images/instructor1.png" alt="">
+                                    <div class="img-circle"></div>
+                                </div>
+                                <p class="name">アンセルテック</p>
+                                <div class="charge-curriculum">
+                                    <p>担当カリキュラム</p>
+                                    <div class="tag">
+                                        <p>HTML/CSS</p>
+                                        <p>JavaScript</p>
+                                        <p>PHP</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="instructor-content">
+                                <div class="img">
+                                    <img src="images/instructor2.png" alt="">
+                                    <div class="img-circle"></div>
+                                </div>
+                                <p class="name">アンセルテック</p>
+                                <div class="charge-curriculum">
+                                    <p>担当カリキュラム</p>
+                                    <div class="tag">
+                                        <p>HTML/CSS</p>
+                                        <p>JavaScript</p>
+                                        <p>PHP</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="instructor-content">
+                                <div class="img">
+                                    <img src="images/instructor3.png" alt="">
+                                    <div class="img-circle"></div>
+                                </div>
+                                <p class="name">アンセルテック</p>
+                                <div class="charge-curriculum">
+                                    <p>担当カリキュラム</p>
+                                    <div class="tag">
+                                        <p>HTML/CSS</p>
+                                        <p>JavaScript</p>
+                                        <p>PHP</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="instructor-content">
+                                <div class="img">
+                                    <img src="images/instructor4.png" alt="">
+                                    <div class="img-circle"></div>
+                                </div>
+                                <p class="name">アンセルテック</p>
+                                <div class="charge-curriculum">
+                                    <p>担当カリキュラム</p>
+                                    <div class="tag">
+                                        <p>HTML/CSS</p>
+                                        <p>JavaScript</p>
+                                        <p>PHP</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="instructor-content">
+                                <div class="img">
+                                    <img src="images/instructor5.png" alt="">
+                                    <div class="img-circle"></div>
+                                </div>
+                                <p class="name">アンセルテック</p>
+                                <div class="charge-curriculum">
+                                    <p>担当カリキュラム</p>
+                                    <div class="tag">
+                                        <p>HTML/CSS</p>
+                                        <p>JavaScript</p>
+                                        <p>PHP</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="instructor-content">
+                                <div class="img">
+                                    <img src="images/instructor6.png" alt="">
+                                    <div class="img-circle"></div>
+                                </div>
+                                <p class="name">アンセルテック</p>
+                                <div class="charge-curriculum">
+                                    <p>担当カリキュラム</p>
+                                    <div class="tag">
+                                        <p>HTML/CSS</p>
+                                        <p>JavaScript</p>
+                                        <p>PHP</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="instructor-content">
+                                <div class="img">
+                                    <img src="images/instructor7.png" alt="">
+                                    <div class="img-circle"></div>
+                                </div>
+                                <p class="name">アンセルテック</p>
+                                <div class="charge-curriculum">
+                                    <p>担当カリキュラム</p>
+                                    <div class="tag">
+                                        <p>HTML/CSS</p>
+                                        <p>JavaScript</p>
+                                        <p>PHP</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="instructor-content">
+                                <div class="img">
+                                    <img src="images/instructor8.png" alt="">
+                                    <div class="img-circle"></div>
+                                </div>
+                                <p class="name">アンセルテック</p>
+                                <div class="charge-curriculum">
+                                    <p>担当カリキュラム</p>
+                                    <div class="tag">
+                                        <p>HTML/CSS</p>
+                                        <p>JavaScript</p>
+                                        <p>PHP</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- カリキュラム -->
+        <section class="curriculum" id="curriculum">
+            <div class="wrapper">
+                <div class="curriculum-inner">
+                    <div class="heading">
+                        <h2>CURRICULUM</h2>
+                        <p>カリキュラム</p>
+                    </div>
+                    <div class="curriculum-container multiple-list js-scroll-trigger">
+                        <div class="front-introduction multiple-item u-fade-type-up">
+                            <h3 class="curriculum-title">フロントエンド入門</h3>
+                            <div class="curriculum-icon">
+                                <img src="images/html-icon.png" alt="HTMLアイコン">
+                                <img src="images/css-icon.png" alt="CSSアイコン">
+                                <img src="images/sass-icon.png" alt="Sassアイコン">
+                            </div>
+                            <p class="curriculum-text">
+                                フロントエンド入門カリキュラムではHTML,CSSを中心に基礎的なマークアップ言語を学習します。全くプログラミングに触れたことのない方、フロントエンドに興味がある方はここから始めることをおすすめしています。
+                            </p>
+                        </div>
+                        <div class="front-basic multiple-item u-fade-type-up">
+                            <h3 class="curriculum-title">フロントエンド基礎</h3>
+                            <div class="curriculum-icon">
+                                <img src="images/js-icon.png" alt="JavaScriptアイコン">
+                                <img src="images/vue-icon.png" alt="Vue.jsアイコン">
+                                <img src="images/next-icon.png" alt="Next.jsアイコン">
+                                <img src="images/jquery-icon.png" alt="jQueryアイコン">
+                            </div>
+                            <p class="curriculum-text">
+                                フロントエンド基礎カリキュラムではJavaScriptとそのフレームワーク・ライブラリを中心に学びます。学習できるフレームワークはVue.js,Next.jsです。ここを学び終えた頃には、簡単なWEB制作ができるようになります。
+                            </p>
+                        </div>
+                        <div class="back-introduction multiple-item u-fade-type-up">
+                            <h3 class="curriculum-title">バックエンド入門</h3>
+                            <div class="curriculum-icon">
+                                <img src="images/java-icon.png" alt="Javaアイコン">
+                                <img src="images/php-icon.png" alt="PHPアイコン">
+                                <img src="images/laravel-icon.png" alt="Laraveアイコン">
+                            </div>
+                            <p class="curriculum-text">
+                                バックエンド入門カリキュラムでは、PHPとJavaを学ぶことができます。それぞれ片方だけでも両方でも受講することができますので、それぞれの志向性に応じて進めることが可能です。JavaのフレームワークはSpringBoot、PHPのフレームワークはLaravelです。
+                            </p>
+                        </div>
+                        <div class="infra-basic multiple-item u-fade-type-up">
+                            <h3 class="curriculum-title">インフラクラウド基礎</h3>
+                            <div class="curriculum-icon">
+                                <img src="images/aws-icon.png" alt="AWSアイコン">
+                                <img src="images/docker-icon.png" alt="Dockerアイコン">
+                                <img src="images/linux-icon.png" alt="Lunuxアイコン">
+                            </div>
+                            <p class="curriculum-text">
+                                フロントエンド入門カリキュラムではHTML,CSSを中心に基礎的なマークアップ言語を学習します。全くプログラミングに触れたことのない方、フロントエンドに興味がある方はここから始めることをおすすめしています。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENTRY -->
+        <section class="entry">
+            <div class="wrapper">
+                <div class="entry-wrapper">
+                    <div class="entry-inner multiple-list js-scroll-trigger">
+                        <div class="blue-heading">
+                            <img src="images/entry-icon.png" alt="">
+                            <div class="heading">
+                                <h2>ENTRY</h2>
+                                <p>無料面談申し込み</p>
+                            </div>
+                        </div>
+                        <p class="entry-text">
+                            キャリアに関する疑問や不安を相談したり、習得できるスキルやサポートについて説明を受けられる無料面談を実施しています。あなたの思いや夢を聞かせてください。
+                        </p>
+                        <div class="career">
+                            <p>キャリア相談からカリキュラム説明まで</p>
+                            <img src="images/entry-yellow-line.png" alt="">
+                        </div>
+                        <div class="free">
+                            <span>完</span>
+                            <span>全</span>
+                            <span>無</span>
+                            <span>料</span>
+                        </div>
+                        <div class="entry-btn multiple-item u-fade-type-up"> <!--CTA-->
+                            <p>面談申込で10万円OFF！</p>
+                            <a class="btn_shining" href="#">無料面談に申し込む</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 制作実績 -->
+        <section class="results" id="results">
+            <div class="wrapper">
+                <div class="results-inner">
+                    <div class="heading">
+                        <h2>RESULTS</h2>
+                        <p>制作実績</p>
+                    </div>
+                    <p class="results-text">
+                        ＼Ansel Tech Academyで学ぶとこのような制作物が出来上がります／
+                    </p>
+                    <div class="results-container multiple-list js-scroll-trigger">
+                        <div class="results-content multiple-item u-fade-type-up">
+                            <img src="images/result1.png" alt="">
+                            <p>コーポレートサイトのWebデザイン</p>
+                            <div class="results-tag">
+                                <p>Figma</p>
+                                <p>Photoshop</p>
+                            </div>
+                        </div>
+                        <div class="results-content multiple-item u-fade-type-up">
+                            <img src="images/result2.png" alt="">
+                            <p>化粧品販売のランディングページ</p>
+                            <div class="results-tag">
+                                <p>Figma</p>
+                            </div>
+                        </div>
+                        <div class="results-content multiple-item u-fade-type-up">
+                            <img src="images/result3.png" alt="">
+                            <p>サービスサイトのWebデザイン</p>
+                            <div class="results-tag">
+                                <p>Figma</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 他スクールとの比較 -->
+        <section class="comparison" id="comparison">
+            <div class="wrapper">
+                <div class="comparison-inner">
+                    <div class="heading">
+                        <h2>COMPARISON</h2>
+                        <p>他スクールとの比較</p>
+                    </div>
+                    <div class="scroll-arrow">
+						<p>scroll</p>
+						<img src="images/scroll-arrow.png" alt="">
+					</div>
+                    <div class="comparison-content multiple-list js-scroll-trigger">
+                        <table class="multiple-item u-fade-type-up">
+                            <tr>
+                                <th class="th-space"></th>
+                                <th class="ansel">Ansel Tech Academy</th>
+                                <th class="head">A社</th>
+                                <th class="head">B社</th>
+                                <th class="head">C社</th>
+                            </tr>
+                            <tr>
+                                <td class="column">期間</td>
+                                <td class="ansel-item">6ヶ月〜</td>
+                                <td>1ヶ月</td>
+                                <td>1,4,6ヶ月</td>
+                                <td>3ヶ月</td>
+                            </tr>
+                            <tr>
+                                <td class="column">担当講師</td>
+                                <td class="ansel-item">審査に通過した<br>現役のエンジニア</td>
+                                <td>なし</td>
+                                <td>非公開</td>
+                                <td>エンジニア</td>
+                            </tr>
+                            <tr>
+                                <td class="column">価格</td>
+                                <td class="ansel-item">498,000円〜</td>
+                                <td>3,900円〜</td>
+                                <td>29,800円〜</td>
+                                <td>80,000円〜</td>
+                            </tr>
+                            <tr>
+                                <td class="column">学習難易度</td>
+                                <td class="ansel-item">高い</td>
+                                <td>低い</td>
+                                <td>一般的</td>
+                                <td>一般的</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 受講料金 -->
+        <section class="price" id="price">
+            <div class="wrapper">
+                <div class="price-wrapper multiple-list js-scroll-trigger">
+                    <div class="price-inner multiple-item u-fade-type-up">
+                        <div class="price-title">
+                            <h2>受講料金</h2>
+                            <p>通常価格 550,000円(税込)のところ...</p>
+                        </div>
+                        <div class="price-container">
+                            <div class="price-content">
+                                <p class="above">無料面談にお申込みいただいた方限定で</p>
+                                <p class="under">100,000円OFF！</p>
+                            </div>
+                            <div class="price-btn">
+                                <a class="btn_shining" href="#">無料面談に申し込む</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- よくある質問 -->
+        <section class="faq" id="faq">
+            <div class="wrapper">
+                <div class="faq-inner">
+                    <div class="heading">
+                        <h2>FAQ</h2>
+                        <p>よくある質問</p>
+                    </div>
+                    <div class="faq-container multiple-list js-scroll-trigger">
+                        <div class="faq-content multiple-item u-fade-type-up">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">プログラミング未経験ですが大丈夫でしょうか？</p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    全く問題ございません。Ansel Tech Academyでは、多くの方が未経験からスタートされており、初心者にも優しい学習環境とサポート体制を整えています。 プログラミングの基礎から応用まで、一歩ずつ丁寧に指導し、理解が深まるように努めています。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-content multiple-item u-fade-type-up">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">40代ですが受講可能ですか？</p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    案件を獲得できるスキルを身につければ、年齢は一切関係ございません。ご安心ください。 キャリアアドバイザーによるサポートも充実しており、受講生一人ひとりの状況に応じたキャリア形成をサポートします。年齢を気にせず、自分のキャリアを次のレベルへと進めたい方を全力で支援します。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-content multiple-item u-fade-type-up">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">どのようなスキルが学べますか？</p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    IT業界で必要なスキルの講座を揃えています。 WEB制作(マークアップのコツ・HTML・CSS・Sass・JavaScript・jQuery・CSS設計・Git・WordPress・PHP), Webデザイン, Python, Java, Ruby, 動画編集, Shopifyが学べます。 また、今後学べるスキルは随時追加されていきます。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-content multiple-item u-fade-type-up">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">他のスクールより受講費用が安い理由を教えてください。</p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    Ansel Tech Academyは、オンラインのプログラミングスクールですので、店舗などを構えず学習コースの開発やプロモーション以外の費用をかけておりません。そのため、受講者の方々にはお安く受講頂ける仕組みとなっております。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-content multiple-item u-fade-type-up">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">閲覧期間などはありますか？</p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    閲覧期間についてのご心配は不要です。教材には期限を設けておらず、ご購入後は半永久的にアクセスし、お使いいただけます。 忙しい中でも、学びを続けることができる柔軟性を提供するため、このようなシステムを取り入れています。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-content multiple-item u-fade-type-up">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">学習するのにWindowsやMacなどパソコンの指定はありますか？</p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    Ansel Tech Academyの学習コンテンツは主にMacを使用していますが、Windowsでも学習は可能で問題はありません。WindowsとMacで操作が異なる場合は動画内にて解説させて頂いております。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-content multiple-item u-fade-type-up">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">動画教材はスマホでも見ることができますか？推奨ネット環境についても教えてください。</p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    スマホからでも動画解説を見ることができます。推奨ブラウザはGoogle Chromeです。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-content multiple-item u-fade-type-up">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">WebブラウザはChromeやFirefoxなどの指定はありますか？</p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    Ansel Tech Academyの学習ではChromeを推奨しておりますが、FirefoxやEdgeなど他のブラウザでも学習していただけます。 Google Chromeは無料ダウンロードが可能ですので、学習を機にダウンロードをご検討下さい。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-content multiple-item u-fade-type-up">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">画像素材や完成版のコードの提供はございますか？</p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    はい、もちろんです。当コースでは、画像素材や完成版のコードの提供を行っております。これにより、実際のプロジェクトで必要とされる資料やコードの扱い方を学ぶことができ、より実践的なスキルを身につけることが可能です。 また、完成したものはご自身のポートフォリオとしてお使い頂くことで、就職活動やフリーランスとして活動する際に、大きなアドバンテージとなります。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-content multiple-item u-fade-type-up">
+                            <div class="question">
+                                <p class="q">Q</p>
+                                <p class="q-text">講義の質問はどこでやればいいですか？</p>
+                            </div>
+                            <div class="answer">
+                                <p class="a">A</p>
+                                <p class="a-text">
+                                    講義に関するご質問は、専用のSlackで承っております。受講開始時にSlackへの招待をお送りしますので、そちらに参加いただくことで講師と直接コミュニケーションを取ることが可能です。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENTRY -->
+        <section class="entry">
+            <div class="wrapper">
+                <div class="entry-wrapper">
+                    <div class="entry-inner multiple-list js-scroll-trigger">
+                        <div class="blue-heading">
+                            <img src="images/entry-icon.png" alt="">
+                            <div class="heading">
+                                <h2>ENTRY</h2>
+                                <p>無料面談申し込み</p>
+                            </div>
+                        </div>
+                        <p class="entry-text">
+                            キャリアに関する疑問や不安を相談したり、習得できるスキルやサポートについて説明を受けられる無料面談を実施しています。あなたの思いや夢を聞かせてください。
+                        </p>
+                        <div class="career">
+                            <p>キャリア相談からカリキュラム説明まで</p>
+                            <img src="images/entry-yellow-line.png" alt="">
+                        </div>
+                        <div class="free">
+                            <span>完</span>
+                            <span>全</span>
+                            <span>無</span>
+                            <span>料</span>
+                        </div>
+                        <div class="entry-btn multiple-item u-fade-type-up"> <!--CTA-->
+                            <p>面談申込で10万円OFF！</p>
+                            <a class="btn_shining" href="#">無料面談に申し込む</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-inner">
+                <div class="footer-heading">
+                    <a href="#">Ansel Tech Academy</a>
+                    <img src="images/Ansel-logo.png" alt="">
+                </div>
+                <div class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li><a href="#">Ansel Tech Academyとは</a></li>
+                        <li><a href="#">受講後の未来</a></li>
+                        <li><a href="#">Ansel Tech Academyの特徴</a></li>
+                    </ul>
+                    <ul class="footer-nav-list">
+                        <li><a href="#">スクール生の声</a></li>
+                        <li><a href="#">結果が出る理由</a></li>
+                        <li><a href="#">講師紹介</a></li>
+                        <li><a href="#">カリキュラム</a></li>
+                    </ul>
+                    <ul class="footer-nav-list">
+                        <li><a href="#">制作物</a></li>
+                        <li><a href="#">他スクールとの違い</a></li>
+                        <li><a href="#">よくある質問</a></li>
+                    </ul>
+                </div>
+                <p class="copyright">©︎Ansel Tech Academy. inc. All Right Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script defer src="js/main.js"></script>
 </body>
 </html>
